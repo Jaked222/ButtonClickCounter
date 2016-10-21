@@ -89,10 +89,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+    public void onSaveInstanceState(Bundle outState) {
         Log.d(TAG, "onSaveInstanceState: in");
         outState.putString(TEXT_CONTENTS, textView.getText().toString());
-        super.onSaveInstanceState(outState, outPersistentState);
+        super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState: out");
     }
 
